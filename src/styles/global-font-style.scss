@@ -1,0 +1,199 @@
+@import "./design-variables.scss";
+
+.font_h1_headline_bold {
+  @include h1-headline($bold-font-weight);
+}
+
+.font_h1_headline_regular {
+  @include h1-headline($regular-font-weight);
+}
+
+.font_subtitle_bold {
+  @include subtitle($bold-font-weight);
+}
+
+.font_subtitle_regular {
+  @include subtitle($regular-font-weight);
+}
+
+.font_h2_headline {
+  @include h2-headline;
+}
+
+.font_h3_headline {
+  @include h3-headline;
+}
+
+.font_h4_headline {
+  @include h4-headline;
+}
+
+.font_h5_headline {
+  @include h5-headline;
+}
+
+.font_main_bold {
+  @include main($bold-font-weight);
+}
+
+.font_main_regular {
+  @include main($regular-font-weight);
+}
+
+.font_menu {
+  @include menu;
+}
+
+.font_additional {
+  @include additional;
+}
+
+.font_small_bold {
+  @include small($bold-font-weight);
+}
+
+.font_small_regular {
+  @include small($regular-font-weight);
+}
+
+.font_navigator_logo {
+  @include subtitle(600);
+  line-height: 20px;
+}
+
+.font_hero_title {
+  @include h1-headline(700);
+  color: #fff;
+  text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  font-size: 180px;
+  font-style: normal;
+  line-height: 210px;
+  text-transform: capitalize;
+}
+
+.font_hero_content {
+  @include main(400);
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: Raleway;
+  line-height: 24px;
+}
+
+.font_hero_background {
+  color: rgba(254, 254, 254, 0.07);
+  font-family: Open Sans;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 400px;
+  user-select: none;
+}
+
+.font_hero_button {
+  @include main(700);
+  color: var(--general-primary, #5b99b3);
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+}
+
+.font_get_started_h2 {
+  text-align: center;
+  font-size: 144px;
+  font-weight: 700;
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0);
+  border: 2px;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.font_get_started_content_title {
+  color: var(--general-light, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.font_get_started_content_title_blue {
+  color: var(--general-light, #5b99b3);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.font_get_started_content_p {
+  color: var(--general-light, #fff);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 158.333% */
+}
+
+.font_get_started_button_watch_video_text {
+  color: var(--general-light, #fff);
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+.font_testimonials_title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.font_testimonial_card_text {
+  color: var(--general-dark, #222);
+  text-align: center;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.font_testimonial_card_user_name {
+  color: var(--general-dark, #222);
+  text-align: center;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+.font_testimonial_card_user_url {
+  color: var(--general-primary, #5b99b3);
+  text-align: center;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
